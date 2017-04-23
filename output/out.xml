@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product>
+        <amount>45</amount>
+        <description>Description1</description>
+        <name>Name1</name>
+        <price>78</price>
+        <productType>CONVENIENCE</productType>
+    </product>
+    <product>
+        <amount>884</amount>
+        <description>Description2</description>
+        <name>Name2</name>
+        <price>98</price>
+        <productType>SPECIALITY</productType>
+    </product>
+    <product>
+        <amount>123</amount>
+        <description>Description3</description>
+        <name>Name3</name>
+        <price>198</price>
+        <productType>SPECIALITY</productType>
+    </product>
+    <product>
+        <amount>2884</amount>
+        <description>Description4</description>
+        <name>Name4</name>
+        <price>10</price>
+        <productType>SPECIALITY</productType>
+    </product>
+</products>

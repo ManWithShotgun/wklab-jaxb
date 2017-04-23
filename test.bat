@@ -1,0 +1,1 @@
+java -jar jaxb-serializer-impl\target\jaxb-serializer-impl-1.0.0-jar-with-dependencies.jar -in input/in.xml -out output/out.xml

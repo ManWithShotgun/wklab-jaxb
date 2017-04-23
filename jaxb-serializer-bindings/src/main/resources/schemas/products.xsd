@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="product">
+    <xs:sequence>
+      <xs:element name="amount" type="xs:int"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="price" type="xs:int"/>
+      <xs:element name="productType" type="productType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="products">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="product" type="product" nillable="true" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="productType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SPECIALITY"/>
+      <xs:enumeration value="SHOPPING"/>
+      <xs:enumeration value="CONVENIENCE"/>
+      <xs:enumeration value="UNSOUGHT"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+
